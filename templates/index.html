@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Civic Issue Reporter</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #eef5ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+            width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2563eb;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            margin-top: 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>🚨 AI Civic Issue Reporter</h1>
+
+        <p>
+            Upload an image of a civic issue and let AI generate
+            a report for the concerned authorities.
+        </p>
+
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <button type="submit">Upload Image</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
