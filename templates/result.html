@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>AI Analysis</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #eef5ff;
+            padding: 40px;
+        }
+
+        .card {
+
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+
+        }
+
+        h1 {
+
+            color: #2563eb;
+
+        }
+
+        .tag {
+
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background: #2563eb;
+            color: white;
+
+            margin: 5px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>🤖 AI Analysis Result</h1>
+
+        <h2>Uploaded Image</h2>
+
+        <img src="{{ image_path }}" alt="Uploaded Image" style="
+           width:300px;
+           border-radius:12px;
+           margin:15px 0;
+           box-shadow:0 4px 15px rgba(0,0,0,.2);
+     ">
+        <p class="tag">
+
+            Issue:
+            {{ issue }}
+
+        </p>
+
+        <p class="tag">
+
+            Severity:
+            {{ severity }}
+
+        </p>
+
+        <p>
+
+            <b>Responsible Department:</b>
+
+            {{ department }}
+
+        </p>
+
+        <p>
+
+            <b>Description</b>
+
+            <br><br>
+
+            {{ description }}
+
+        </p>
+
+        <hr>
+
+        <h2>📄 Auto Generated Complaint</h2>
+
+        <p>
+
+            A {{ severity }} priority {{ issue }}
+            has been detected.
+
+            The issue should be forwarded to
+            {{ department }} immediately.
+
+            {{ description }}
+
+        </p>
+
+        <br>
+
+        <a href="/">
+
+            <button>
+
+                Analyze Another Image
+
+            </button>
+
+        </a>
+
+    </div>
+
+</body>
+
+</html>
