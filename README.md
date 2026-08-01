@@ -1,2 +1,2 @@
 # AI-Civic-Issue-Reporter
-AI-powered civic issue reporting system
+An AI-powered web application that detects civic issues from uploaded images, identifies the responsible department, and generates complaint reports.
